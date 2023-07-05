@@ -34,10 +34,10 @@ changelog:
       - '^test:'
 dockers:
   - image_templates:
-    - "gcr.io/graytonio/go-vxbot:{{ .Major }}.{{ .Minor }}.{{ .Patch }}"
-    - "gcr.io/graytonio/go-vxbot:{{ .Major }}.{{ .Minor }}"
-    - "gcr.io/graytonio/go-vxbot:{{ .Major }}"
-    - "gcr.io/graytonio/go-vxbot:latest"
+    - "ghcr.io/graytonio/go-vxbot:{{ .Major }}.{{ .Minor }}.{{ .Patch }}"
+    - "ghcr.io/graytonio/go-vxbot:{{ .Major }}.{{ .Minor }}"
+    - "ghcr.io/graytonio/go-vxbot:{{ .Major }}"
+    - "ghcr.io/graytonio/go-vxbot:latest"
 
 
 # yaml-language-server: $schema=https://goreleaser.com/static/schema.json
