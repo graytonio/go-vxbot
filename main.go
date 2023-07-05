@@ -24,6 +24,9 @@ func parseEnv() {
 	}
 
 	logLevelSetting := os.Getenv("LOG_LEVEL")
+	if logLevelSetting == "" {
+		logLevelSetting = "info"
+	}
 	LogLevel, err = logrus.ParseLevel(logLevelSetting)
 	if err != nil {
 		logrus.Fatal("Invalid LOG_LEVEL")
